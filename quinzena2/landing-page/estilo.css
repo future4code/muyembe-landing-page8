@@ -1,0 +1,466 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+body{
+    width: 100vw;
+}
+
+#cabecalho_mobile{
+    display: none;
+}
+
+.logo {
+    display: inline-flex;
+    width: 9vw;
+    float: left;
+    padding: 6px;
+}
+
+.navigation-menu {
+    display: flex;
+    list-style: none;
+    align-items: right;
+} 
+
+.menu_desktop {
+    display: flex;
+    font-family: Arial;
+    flex-direction: row;
+    padding: 10px;
+    margin: 10px;
+}
+
+.nav-item:hover {
+    color: #c23949;
+}
+
+.nav-item {
+    display: flex;
+    text-decoration: none;
+    color: black;
+    letter-spacing: 2px;
+}
+
+.image {
+    display: flex;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+}
+
+.slogan{
+    display: block;
+    position: absolute;
+    padding: 100px;
+    top:500px;
+    font-style: oblique;
+    font-size: x-large;
+    color: white;
+}
+
+.text {
+    font-size: 32px;
+    align-items: center;
+    text-align: center;
+}
+
+article{
+    position: relative;
+    left:35vw;
+}
+
+.company {
+    display: inline-flex;
+    width: 50vw;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+.company:hover {
+    background-color: cornflowerblue;
+}
+
+.title {
+    display: inline-flex;
+    width: 10px;
+    position: absolute;
+    font-size: 300;
+}
+
+.lupa {
+    width: 200px;
+    top: 10px;
+    display: inline-flex;
+}
+
+.service {
+    display: inline-flex;
+    width: 50vw;
+    border: 1px solid black;
+    padding: 10px;
+    margin: 10px;
+}
+
+.service:hover {
+    background-color: cornflowerblue;
+}
+
+.title {
+    display: flex;
+    width: 10px;
+    position: absolute;
+    font-size: 300;
+}
+
+.moto {
+    width: 200px;
+    top: 10px;
+    display: inline-flex;
+}
+
+h2 {
+    padding: 5px;
+    margin: 5px;
+    position: relative;
+}
+
+.braço {
+    width: 200px;
+    top: 10px;
+    display: inline-flex;
+}
+
+.van {
+    width: 200px;
+    top: 10px;
+    display: flex;
+}
+
+.alvo {
+    width: 200px;
+    top: 10px;
+    display: inline-flex;
+}
+
+.interrog {
+    width: 200px;
+    top: 10px;
+    display: flex;
+}
+
+.percent {
+    width: 200px;
+    top: 10px;
+    display: flex;
+}
+
+
+.formulario {
+    padding: 10px;
+    margin: 10px;
+    display: inline-block;
+    border: 1px solid black;
+}
+
+#candidato {
+    display: inline-block;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+}
+
+input {
+    padding: 4px;
+    margin: 4px;
+} 
+
+
+.logo{
+    height: 20vh;
+    position: center;
+}
+
+
+.input_de_checagem{
+    display: none;
+}
+
+.img_banner_mobile{
+    display: none;
+}
+
+.social:hover{
+    filter: grayscale(0);
+}
+
+footer {
+    width: 100vw;
+    position: relative;
+    bottom:0;
+    background-color: #82a3a1;
+    
+}
+
+.text-social {
+    display: block;
+    text-align: center;
+}
+
+.redes_sociais{
+    display: flex;
+    justify-content: center;
+}
+
+.social {
+    margin: 2px 70px;
+    padding: 2px;
+    width: 50px;
+    filter: grayscale(100%);
+}
+
+
+@media screen and(min-device-width: 4) and (max-device-width: 1280px){
+    body{
+        width: 300vw;
+    }
+    footer {
+        width: 300vw;
+        
+    }
+}
+
+
+
+@media screen and (max-device-width: 1000px){
+    body{
+        background-color: #f4f1de;
+    }
+    
+    #navigation{
+        display: none;
+    }
+
+    .logo{
+        position: absolute;
+        top:0px;
+        left:0;
+        width: 23vw;
+        height: 14vh;
+    }
+    
+    .logo_mobile{
+        display: inherit;
+        height: 10vh;
+        bottom:282px;
+        left:25px;
+        position: absolute;
+    }
+
+    #cabecalho_mobile{
+        display: inherit;
+        width: 100vw;
+        height: 20vh;
+        color: #c23949;
+        background-color:#cea09a;
+        
+    }
+
+    .input_de_checagem:checked ~ #lista_menu_mobile{
+        opacity: 1;
+        left: 15vw;
+    }
+
+    .input_de_checagem:checked ~ label .menu_mobile{
+        box-shadow: 0 0 0 100vw black, 0 0 0 100vh black;
+        z-index: 0;
+    }
+    
+    
+    .input_de_checagem:checked ~ label .hamburguer {
+        transform: rotate(45deg);
+    }
+
+    .input_de_checagem:checked ~ label .hamburguer:before{
+        transform: rotate(90deg);
+        top: 0;
+    }
+    
+    .input_de_checagem:checked ~ label .hamburguer:after{
+        transform: rotate(90deg);
+        bottom: 0;
+    }
+
+    .menu_mobile{
+        width: 60px;
+        height: 60px;
+        background-color: black;
+        border-radius: 50%;
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        transition: 1s ease-in-out;
+    }
+
+    .hamburguer{
+        position: relative;
+        display: block;
+        background-color: #c23949;
+        width: 30px;
+        height: 3px;
+        top: 29px;
+        left: 15px;
+        transition: 0.5s ease-in-out;
+    }
+
+    .hamburguer:before,
+    .hamburguer:after{
+        background-color: #c23949;
+        content: '';
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        transition: 0.5s ease-in-out;
+    }
+
+    .hamburguer:before{
+        top:-10px;
+    }
+
+    .hamburguer:after{
+        bottom:-10px;
+    }
+
+    #lista_menu_mobile{
+        position: absolute;
+        top:20vh;
+        left: -20vw;
+        list-style: none;
+        opacity: 0;
+        transition: 1s ease-in-out;
+    }
+
+    .menu_localizacao{
+        display: block;
+        margin-bottom: 5px;
+        font-size: 30px;
+        color:#c23949;
+        text-decoration: none;
+    }
+
+    .title {
+        width: 10px;
+        margin-bottom: 3px;
+        position: absolute;
+        font-size: 200;
+    }
+
+    .img_banner{
+        display: none;
+    }
+
+    .img_banner_mobile{
+        display: inherit;
+        width: 100vw;
+        height: 600px;
+
+    }
+
+    .container{
+        height: 0;
+    }
+
+    .tamanho_img{
+        width: 100vw;
+    }
+
+    .imagens_diversas{
+        width: 30vw;
+        margin-top: 50px;
+    }
+
+    .lupa{
+        width: 10vw;
+        height: 5vh;
+        margin-top: 50px;
+        margin-right: 3px;
+    }
+
+    .slogan{
+        display: block;
+        position: absolute;
+        padding: 100px;
+        top:350px;
+        font-style: oblique;
+        font-size: x-large;
+        color: white;
+    }
+
+    article{
+        left:0vw;
+    }
+
+    .company {
+        display: inline-flex;
+        width: 90vw;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .nao_mobile{
+        display: none;
+    }
+
+    .service {
+        display: inline-flex;
+        width: 90vw;
+        border: 1px solid black;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .formulario, #candidato{
+        width: 90vw;
+        padding: 10px;
+        margin: 10px;
+        display: inline-block;
+        border: 1px solid black;
+        text-align: center;
+    }
+
+
+    .estilo_botao{
+        border-radius: 25%;
+        background-color: #82a3a1;
+        color:white;
+        border-bottom: none;
+    }
+
+    footer {
+        position: relative;
+        bottom:0;
+        background-color: #82a3a1;
+        width: 100vw;
+    }
+
+    .text-social {
+        display: block;
+        text-align: center;
+    }
+
+    .social {
+        margin: 2px 25px;
+        padding: 2px;
+        width: 50px;
+        filter: grayscale(100%);
+    }
+
+    .social:hover{
+        filter: grayscale(0);
+    }
+
+} 
